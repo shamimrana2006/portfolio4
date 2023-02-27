@@ -1,0 +1,36 @@
+/* @font_face import*/
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  padding: 0px 25px;
+  height: 50px;
+  /* padding: 6px 20px; */
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+  background: green;
+  border: 1px solid transparent;
+}
+button:hover {
+  border: 1px solid green;
+  background: transparent;
+  color: green;
+  font-weight: bold;
+}

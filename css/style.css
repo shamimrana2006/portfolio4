@@ -1,0 +1,181 @@
+/* Import font form fonts.css file */
+@import url(./fonts&global.css);
+
+/* background for first two section */
+.background {
+  background-image: url(../img/bfv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* navbar design */
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  box-shadow: 0px -25px 50px 1px black;
+  background: rgba(126, 126, 126, 0);
+  backdrop-filter: blur(4px);
+}
+
+.logo {
+  color: rgb(126, 126, 126);
+  font-weight: bold;
+  color: rgb(29, 238, 57);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 300px;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-menu a {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  margin-left: 20px;
+  padding: 8px 21px;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+.nav-menu a:hover {
+  color: #0cff0c;
+}
+
+.nav-item::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  width: 0%;
+  background: rgb(21, 255, 0);
+  border-radius: 50px;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+  transform: scale(1);
+}
+.button-login-popup {
+  margin-left: 20px;
+  border: 2px solid transparent;
+  background: #008700;
+}
+
+/* .active {
+  background: green;
+  border: 1px solid transparent;
+  color: white;
+} */
+/* .nav-item:hover {
+  border: 1px solid transparent;
+  background: green;
+  color: white;
+} */
+.active:hover {
+  border: 1px solid green;
+  background: transparent;
+  color: green;
+  font-weight: bold;
+}
+
+/* navbar end */
+
+/* title welcome */
+.title-wlcome {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  font-size: 3rem;
+  padding-top: 100px;
+}
+
+/* home section */
+.home {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 30px 100px;
+  align-items: center;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+button.button-login-popup:hover {
+  border: 2px solid lime;
+  color: lime;
+}
+.home .menuHome {
+  width: 50%;
+}
+.home .menuHome .title {
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 10px;
+}
+.home .menuHome span {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.home .menuHome span span {
+  color: red;
+}
+.home .me {
+  width: 50%;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.home .mee {
+  width: 550px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 3px 5px 4px bla;
+}
+.bga {
+  width: 300px;
+  position: absolute;
+  z-index: 0;
+  left: 20%;
+  top: 50%;
+  bottom: 50%;
+}
+.details {
+  color: #9d9d9d;
+}
+.cv {
+  margin: 0;
+}
+.cv:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 1150px) {
+}
