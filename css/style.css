@@ -20,14 +20,14 @@
   align-items: center;
   padding: 10px 100px;
   box-shadow: 0px -25px 50px 1px black;
-  background: rgba(126, 126, 126, 0);
+  background: linear-gradient(180deg, #0000009e, transparent);
   backdrop-filter: blur(4px);
 }
 
 .logo {
   color: rgb(126, 126, 126);
   font-weight: bold;
-  color: rgb(29, 238, 57);
+  color: var(--greenColor);
   text-transform: uppercase;
   cursor: pointer;
   font-size: 2rem;
@@ -54,7 +54,7 @@
   transition: 0.3s ease;
 }
 .nav-menu a:hover {
-  color: #0cff0c;
+  color: var(--hover-color);
 }
 
 .nav-item::after {
@@ -64,7 +64,7 @@
   bottom: -6px;
   height: 3px;
   width: 0%;
-  background: rgb(21, 255, 0);
+  background: var(--hover-color);
   border-radius: 50px;
   transition: 0.3s ease;
   transform-origin: left;
@@ -77,7 +77,7 @@
 .button-login-popup {
   margin-left: 20px;
   border: 2px solid transparent;
-  background: #008700;
+  background: var(--greenColor);
 }
 
 /* .active {
@@ -91,9 +91,10 @@
   color: white;
 } */
 .active:hover {
-  border: 1px solid green;
+  border: 1px solid var(--greenColor);
   background: transparent;
-  color: green;
+  color: var(--gree
+  );
   font-weight: bold;
 }
 
@@ -123,8 +124,8 @@
   background-size: cover;
 }
 button.button-login-popup:hover {
-  border: 2px solid lime;
-  color: lime;
+  border: 2px solid var(--hover-color);
+  color: var(--hover-color);
 }
 .home .menuHome {
   width: 50%;
@@ -225,12 +226,14 @@ i.fa-brands.fa-instagram {
 }
 @media (max-width: 1150px) {
 }
+/* ========================Abouts design */
 .aboutS {
   backgroundimage: url(/img/bubble.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
+  padding: 160px 0px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -263,4 +266,63 @@ i.fa-brands.fa-instagram {
 .dd {
   height: 1000px;
   color: red;
+}
+
+
+
+/* ===========================================================================================================================================================================================================section servise==================== */
+
+.servisTi{
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 80px;
+}
+.servisTi span{
+  color: red;
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.myServise{
+  padding: 0px 100px;
+}
+.boxS h2{
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.boxS h2 span{
+  color: var(--greenColor);
+  font-weight: bold;
+  
+}
+.boxS span{
+  color: rgb(180, 180, 180);
+  margin-bottom: 50px;
+}
+
+.boxS{
+  border: 1px solid transparent;
+  width: 30%;
+  transition: .3s ease;
+  padding: 100px 30px;
+  background-color: rgb(59, 59, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.boxS:last-child{
+  margin-right: 0px; 
+}
+
+.boxS:hover {
+  background: #4c4c4c;
+  border: 1px solid var(--hover-color);
+  transform: scale(1.02)  translateY(-5px);
+  /* transform: translateY(-6px); */
 }

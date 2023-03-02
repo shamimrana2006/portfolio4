@@ -3,6 +3,12 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+:root{
+  --greenColor :green;
+  --hover-color : lime;
+
+
+}
 
 * {
   padding: 0;
@@ -13,6 +19,16 @@
 }
 body{
   background-color: rgb(42, 42, 42);
+}
+img{
+  transition: 1s ease;
+}
+img:hover{
+  transform: scale(1.051);
+}
+section{
+  padding: 20px 0px;
+ column-gap: white ;
 }
 a {
   text-decoration: none;
@@ -28,13 +44,13 @@ button {
   transition: 0.3s ease;
   cursor: pointer;
   color: white;
-  background: green;
+  background: var(--greenColor);
   border: 2px solid transparent;
 }
 button:hover {
-  border: 2px solid green;
+  border: 2px solid var(--hover-color);
   background: transparent;
-  color: green;
+  color: var(--hover-color);
   font-weight: bold;
 
 }
