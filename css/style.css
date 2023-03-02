@@ -11,9 +11,9 @@
 /* navbar design */
 .nav {
   position: -webkit-sticky;
-  position: sticky;
-
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -32,6 +32,7 @@
   cursor: pointer;
   font-size: 2rem;
   width: 300px;
+
 }
 
 .logo span {
@@ -103,7 +104,7 @@
   text-align: center;
   color: white;
   z-index: 2;
-  font-size: 3rem;
+  font-size: 4rem;
   padding-top: 100px;
 }
 
@@ -130,11 +131,11 @@ button.button-login-popup:hover {
 }
 .home .menuHome .title {
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 10px;
 }
 .home .menuHome span {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -167,7 +168,8 @@ button.button-login-popup:hover {
   margin-bottom: 50px;
 }
 .details {
-  color: #9d9d9d;
+  color: #afafaf;
+  font-size: 23px;
 }
 .cv {
   margin: 0;
@@ -177,5 +179,88 @@ button.button-login-popup:hover {
   border: 1px solid white;
 }
 
+.socialLink img {
+  color: white;
+  background-attachment: red;
+  width: 20px;
+}
+/* icon color0 */
+.socialbtn a {
+  color: white;
+  font-size: 1.4rem;
+  transition: 0.3s ease;
+}
+
+.socialbtn a i {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 6px;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+
+i.fa-brands.fa-facebook {
+  color: #1773ea;
+}
+i.fa-brands.fa-linkedin {
+  color: #0e72a3;
+}
+.socialbtn {
+  margin-bottom: 20px;
+}
+i.fa-brands.fa-youtube {
+  color: #f70000;
+}
+
+i.fa-brands.fa-twitter {
+  color: #1c96e8;
+}
+
+i.fa-brands.fa-instagram {
+  color: #e30289;
+}
+.socialbtn a i:hover {
+  background: white;
+  color: black;
+}
 @media (max-width: 1150px) {
+}
+.aboutS {
+  backgroundimage: url(/img/bubble.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.aboutS .about{
+  width: 55%;
+}
+
+.aboutS .sse {
+  width: 500px;
+}
+.secondTitle{
+  color: white;
+  font-weight: bold;
+}
+.secondDetails{
+  width: 78%;
+}
+.dds {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sse {
+  margin-top: 100px;
+}
+.dd {
+  height: 1000px;
+  color: red;
 }
