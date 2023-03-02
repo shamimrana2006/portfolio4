@@ -1,6 +1,7 @@
 /* Import font form fonts.css file */
 @import url(./fonts&global.css);
 
+
 /* background for first two section */
 .background {
   background-image: url(../img/bfv.png);
@@ -32,7 +33,6 @@
   cursor: pointer;
   font-size: 2rem;
   width: 300px;
-
 }
 
 .logo span {
@@ -93,8 +93,7 @@
 .active:hover {
   border: 1px solid var(--greenColor);
   background: transparent;
-  color: var(--gree
-  );
+  color: var(--gree);
   font-weight: bold;
 }
 
@@ -142,7 +141,7 @@ button.button-login-popup:hover {
   text-transform: uppercase;
 }
 .home .menuHome span span {
-  color: red;
+  color: var(--red-color);
 }
 .home .me {
   width: 50%;
@@ -182,7 +181,7 @@ button.button-login-popup:hover {
 
 .socialLink img {
   color: white;
-  background-attachment: red;
+  background-attachment: var(--red-color);
   width: 20px;
 }
 /* icon color0 */
@@ -224,8 +223,6 @@ i.fa-brands.fa-instagram {
   background: white;
   color: black;
 }
-@media (max-width: 1150px) {
-}
 /* ========================Abouts design */
 .aboutS {
   backgroundimage: url(/img/bubble.png);
@@ -240,18 +237,18 @@ i.fa-brands.fa-instagram {
   overflow: visible;
 }
 
-.aboutS .about{
+.aboutS .about {
   width: 55%;
 }
 
 .aboutS .sse {
   width: 500px;
 }
-.secondTitle{
+.secondTitle {
   color: white;
   font-weight: bold;
 }
-.secondDetails{
+.secondDetails {
   width: 78%;
 }
 .dds {
@@ -265,49 +262,46 @@ i.fa-brands.fa-instagram {
 }
 .dd {
   height: 1000px;
-  color: red;
+  color: var(--red-color);
 }
-
-
 
 /* ===========================================================================================================================================================================================================section servise==================== */
 
-.servisTi{
+.servisTi {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 80px;
 }
-.servisTi span{
-  color: red;
+.servisTi span {
+  color: var(--red-color);
 }
 
-.boxes{
+.boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.myServise{
+.myServise {
   padding: 0px 100px;
 }
-.boxS h2{
+.boxS h2 {
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.boxS h2 span{
+.boxS h2 span {
   color: var(--greenColor);
   font-weight: bold;
-  
 }
-.boxS span{
+.boxS span {
   color: rgb(180, 180, 180);
   margin-bottom: 50px;
 }
 
-.boxS{
+.boxS {
   border: 1px solid transparent;
   width: 30%;
-  transition: .3s ease;
+  transition: 0.3s ease;
   padding: 100px 30px;
   background-color: rgb(59, 59, 59);
   display: flex;
@@ -316,13 +310,62 @@ i.fa-brands.fa-instagram {
   justify-content: space-around;
   border-radius: 10px;
 }
-.boxS:last-child{
-  margin-right: 0px; 
+.boxS:last-child {
+  margin-right: 0px;
 }
 
 .boxS:hover {
   background: #4c4c4c;
   border: 1px solid var(--hover-color);
-  transform: scale(1.02)  translateY(-5px);
+  transform: scale(1.02) translateY(-5px);
   /* transform: translateY(-6px); */
+}
+
+.menuBttn{
+  top: 15px;
+  width: 40px;
+  transform: scaleX(-1);
+  position: absolute;
+  right: 3%;
+  z-index: 5;
+  padding: 2px;
+  border-radius: 6px;
+  display: none;
+
+}
+.menuBttn:hover{
+  transform: scaleX(-1);
+}
+
+
+
+
+/* =============================================================================responsive */
+@media (max-width: 640px) {
+  .nav-menu {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 27%;
+    padding: 15px;
+    border-bottom-left-radius: 13px;
+    background: #3e3d3dd1;
+    backdrop-filter: blur(9px);
+  }
+
+  .nav-menu a {
+    display: block;
+    padding-right: 30px;
+    padding-left: 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+  }
+
+  .nav-menu button {
+    margin: 20px 0px 0px 0px;
+    font-size: 15px;
+  }
+  .menuBttn{
+    display: block;
+  }
 }
