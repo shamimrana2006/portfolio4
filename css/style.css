@@ -90,12 +90,12 @@
   background: green;
   color: white;
 } */
-.active:hover {
-  border: 1px solid var(--greenColor);
+/* .active:hover {
+  border: 2px solid var(--greenColor);
   background: transparent;
   color: var(--gree);
   font-weight: bold;
-}
+} */
 
 /* navbar end */
 
@@ -325,12 +325,13 @@ i.fa-brands.fa-instagram {
   top: 15px;
   width: 40px;
   transform: scaleX(-1);
-  position: absolute;
+  position: fixed;
   right: 3%;
   z-index: 5;
   padding: 2px;
   border-radius: 6px;
   display: none;
+  cursor: pointer;
 
 }
 .menuBttn:hover{
@@ -338,34 +339,92 @@ i.fa-brands.fa-instagram {
 }
 
 
-
+.Navactive{
+  display: block !important;
+}
+.nav-menu {
+  transition: .3s ease;
+}
 
 /* =============================================================================responsive */
 @media (max-width: 640px) {
   .nav-menu {
-    position: absolute;
+    position: fixed;
+    display: none;
     right: 0;
-    top: 70px;
-    width: 27%;
+    top: 60px;
+    width: 40%;
+    transition: .3s ease;
     padding: 15px;
     border-bottom-left-radius: 13px;
     background: #3e3d3dd1;
     backdrop-filter: blur(9px);
   }
 
-  .nav-menu a {
+  .nav-menu .nav-item {
     display: block;
     padding-right: 30px;
     padding-left: 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 1px;
     font-size: 15px;
   }
 
-  .nav-menu button {
+
+  .nav-menu .button {
     margin: 20px 0px 0px 0px;
-    font-size: 15px;
+    font-size: 10px;
   }
   .menuBttn{
     display: block;
+  }
+  .nav{
+    padding: 05px 10px;
+  }
+  .home .mee{
+    width: 400px;
+    display: none;
+  }
+  .home {
+  padding: 14px 10px;
+  flex-direction: column;
+  }
+  .title-wlcome{
+    font-size: 2.6rem;
+    margin-bottom: 42px;
+  }
+  .home .menuHome{
+    justify-content:space-around;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .aboutS{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .secondDetails{
+    width: 100%;
+  }
+  .aboutS div {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    padding: 0px 10px;
+    text-align: center !important;
+  }
+
+  /* my servise responsive */
+  .myServise{
+    margin-top: 120px;
+    padding: 10px 10px;
+  }
+  .myServise .boxes{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxes .boxS{
+    width: 80%;
+    margin-bottom: 50px;
   }
 }
