@@ -34,10 +34,11 @@ section{
 a {
   text-decoration: none;
 }
-button {
+
+.button {
   font-size: 1.1rem;
   /* margin-left: 10px; */
-  padding: 0px 25px;
+  padding: 10px 25px;
   height: 50px;
   /* padding: 6px 20px; */
   border-radius: 6px;
@@ -48,7 +49,7 @@ button {
   background: var(--greenColor);
   border: 2px solid transparent;
 }
-button:hover {
+.button:hover {
   border: 2px solid var(--hover-color);
   background: transparent;
   color: var(--hover-color);

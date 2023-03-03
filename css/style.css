@@ -40,7 +40,7 @@
   font-weight: bold;
   color: white;
 }
-.nav-menu a {
+.nav-menu .nav-item {
   border-radius: 6px;
   border: 1px solid transparent;
   transition: 0.3s ease;
@@ -176,7 +176,7 @@ button.button-login-popup:hover {
 }
 .cv:hover {
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .socialLink img {
