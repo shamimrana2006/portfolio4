@@ -19,6 +19,7 @@
 
 }
 body{
+  color: white;
   background-color: rgb(42, 42, 42);
 }
 img{
@@ -28,7 +29,7 @@ img:hover{
   transform: scale(1.051);
 }
 section{
-  padding: 20px 0px;
+  padding: 90px 100px;
  column-gap: white ;
 }
 a {
@@ -39,7 +40,7 @@ a {
   font-size: 1.1rem;
   /* margin-left: 10px; */
   padding: 10px 25px;
-  height: 50px;
+  /* height: 50px; */
   /* padding: 6px 20px; */
   border-radius: 6px;
   border: 1px solid transparent;

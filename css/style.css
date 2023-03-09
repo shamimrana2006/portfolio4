@@ -1,7 +1,6 @@
 /* Import font form fonts.css file */
 @import url(./fonts&global.css);
 
-
 /* background for first two section */
 .background {
   background-image: url(../img/bfv.png);
@@ -14,6 +13,7 @@
   position: -webkit-sticky;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -105,6 +105,7 @@
   color: white;
   z-index: 2;
   font-size: 4rem;
+  padding: 0px !important;
   padding-top: 100px;
 }
 
@@ -129,7 +130,7 @@ button.button-login-popup:hover {
 .home .menuHome {
   width: 50%;
 }
-.home .menuHome .title {
+.home .menuHome .titles {
   text-transform: capitalize;
   font-size: 1.5rem;
   letter-spacing: 10px;
@@ -158,6 +159,7 @@ button.button-login-popup:hover {
   position: relative;
   z-index: 2;
 }
+
 .bga {
   width: 300px;
   position: absolute;
@@ -243,6 +245,7 @@ i.fa-brands.fa-instagram {
 
 .aboutS .sse {
   width: 500px;
+  transform: rotateY(180deg);
 }
 .secondTitle {
   color: white;
@@ -260,19 +263,15 @@ i.fa-brands.fa-instagram {
 .sse {
   margin-top: 100px;
 }
-.dd {
-  height: 1000px;
-  color: var(--red-color);
-}
 
 /* ===========================================================================================================================================================================================================section servise==================== */
 
-.servisTi {
+.title {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 80px;
 }
-.servisTi span {
+.title span {
   color: var(--red-color);
 }
 
@@ -282,7 +281,7 @@ i.fa-brands.fa-instagram {
   justify-content: space-around;
 }
 .myServise {
-  padding: 0px 100px;
+  padding: 70px 100px;
 }
 .boxS h2 {
   color: white;
@@ -321,7 +320,7 @@ i.fa-brands.fa-instagram {
   /* transform: translateY(-6px); */
 }
 
-.menuBttn{
+.menuBttn {
   top: 15px;
   width: 40px;
   transform: scaleX(-1);
@@ -332,29 +331,104 @@ i.fa-brands.fa-instagram {
   border-radius: 6px;
   display: none;
   cursor: pointer;
-
 }
-.menuBttn:hover{
+.menuBttn:hover {
   transform: scaleX(-1);
 }
 
-
-.Navactive{
+.Navactive {
   display: block !important;
 }
 .nav-menu {
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
+
+
+
+
+
+/* project filedesigne */
+.project{
+  background: rgb(53, 53, 53);
+}
+.hproject-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.hproject-box{
+  position: relative;
+  display: flex;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 38px -12px black;
+  border: 2px solid transparent;
+  transition: .2s;
+
+  
+}
+.hproject-box:hover{
+  border-color:var(--red-color) ;
+  transform: scale(1.1) ;
+}
+.hproject-box img{
+  width: 100%;
+ 
+}
+.hproject-box:hover img{
+  transform: scale(1.2);
+}
+.hproject-box .pbox i{
+  font-size: 2rem;
+}
+.hproject-box .pbox button{
+  font-size: 10px;
+  padding: 0 10px;
+}
+.hproject-box .pbox{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+  text-align: center;
+  background: linear-gradient(transparent, var(--red-color));
+  transform: translateY(100%);
+  transition: .3s;
+
+}
+
+.hproject-box:hover .pbox{
+  transform: translateY(0%);
+  border-color: var(--red-color);
+}
+
+
+
+
+
+
+
+
 
 /* =============================================================================responsive */
 @media (max-width: 640px) {
+  body {
+    width: 100% !important;
+  }
   .nav-menu {
     position: fixed;
     display: none;
     right: 0;
     top: 60px;
     width: 40%;
-    transition: .3s ease;
+    transition: 0.3s ease;
     padding: 15px;
     border-bottom-left-radius: 13px;
     background: #3e3d3dd1;
@@ -369,40 +443,39 @@ i.fa-brands.fa-instagram {
     font-size: 15px;
   }
 
-
   .nav-menu .button {
     margin: 20px 0px 0px 0px;
     font-size: 10px;
   }
-  .menuBttn{
+  .menuBttn {
     display: block;
   }
-  .nav{
+  .nav {
     padding: 05px 10px;
   }
-  .home .mee{
+  .home .mee {
     width: 400px;
     display: none;
   }
   .home {
-  padding: 14px 10px;
-  flex-direction: column;
+    padding: 14px 10px;
+    flex-direction: column;
   }
-  .title-wlcome{
+  .title-wlcome {
     font-size: 2.6rem;
     margin-bottom: 42px;
   }
-  .home .menuHome{
-    justify-content:space-around;
+  .home .menuHome {
+    justify-content: space-around;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
   }
-  .aboutS{
+  .aboutS {
     flex-direction: column;
     padding: 20px;
   }
-  .secondDetails{
+  .secondDetails {
     width: 100%;
   }
   .aboutS div {
@@ -414,17 +487,45 @@ i.fa-brands.fa-instagram {
   }
 
   /* my servise responsive */
-  .myServise{
+  .myServise {
     margin-top: 120px;
     padding: 10px 10px;
   }
-  .myServise .boxes{
+  .myServise .boxes {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .boxes .boxS{
+  .boxes .boxS {
     width: 80%;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 60px;
+    width: 40%;
+    transition: 0.3s ease;
+    padding: 15px;
+    border-bottom-left-radius: 13px;
+    background: #3e3d3dd1;
+    backdrop-filter: blur(9px);
+  }
+
+  .nav-menu .nav-item {
+    display: block;
+    padding-right: 30px;
+    padding-left: 0px;
+    margin: 0px 0px 20px 1px;
+    font-size: 15px;
+  }
+
+  .nav-menu .button {
+    margin: 20px 0px 0px 0px;
+    font-size: 10px;
   }
 }
