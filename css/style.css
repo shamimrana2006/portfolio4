@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,10 +227,7 @@ i.fa-brands.fa-instagram {
 }
 /* ========================Abouts design */
 .aboutS {
-  backgroundimage: url(/img/bubble.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: var(--background-color);
   display: flex;
   padding: 160px 0px;
   flex-direction: row;
@@ -264,12 +261,12 @@ i.fa-brands.fa-instagram {
   margin-top: 100px;
 }
 
-/* ===========================================================================================================================================================================================================section servise==================== */
+/* ====================section servise==================== */
 
 .title {
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 80px;
+  margin-bottom: 115px;
 }
 .title span {
   color: var(--red-color);
@@ -343,50 +340,47 @@ i.fa-brands.fa-instagram {
   transition: 0.3s ease;
 }
 
-
-
-
-
 /* project filedesigne */
-.project{
-  background: rgb(53, 53, 53);
+.project {
+  background: var(--background-color);
 }
-.hproject-container{
+.hproject-container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   align-items: center;
 }
-.hproject-box{
+.hproject-box {
   position: relative;
   display: flex;
   border-radius: 1.1rem;
   overflow: hidden;
   box-shadow: 5px 5px 38px -12px black;
   border: 2px solid transparent;
-  transition: .2s;
-
-  
+  transition: 0.2s;
 }
-.hproject-box:hover{
-  border-color:var(--red-color) ;
-  transform: scale(1.1) ;
+.hproject-box:hover {
+  border-color: var(--red-color);
+  transform: scale(1.1);
 }
-.hproject-box img{
+.hproject-box img {
+  transition: 0.3s;
   width: 100%;
- 
 }
-.hproject-box:hover img{
+.hproject-box:hover img {
   transform: scale(1.2);
 }
-.hproject-box .pbox i{
+.hproject-box .pbox i {
   font-size: 2rem;
+  padding: 10px 20px;
+  background: red;
+  border-radius: 20px;
 }
-.hproject-box .pbox button{
+.hproject-box .pbox button {
   font-size: 10px;
   padding: 0 10px;
 }
-.hproject-box .pbox{
+.hproject-box .pbox {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -400,11 +394,10 @@ i.fa-brands.fa-instagram {
   text-align: center;
   background: linear-gradient(transparent, var(--red-color));
   transform: translateY(100%);
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
-.hproject-box:hover .pbox{
+.hproject-box:hover .pbox {
   transform: translateY(0%);
   border-color: var(--red-color);
 }
@@ -413,11 +406,23 @@ i.fa-brands.fa-instagram {
 
 
 
+/* contact page design */
 
 
 
 
-/* =============================================================================responsive */
+
+
+
+
+
+
+
+
+
+
+
+/* ====================responsive */
 @media (max-width: 640px) {
   body {
     width: 100% !important;
@@ -501,6 +506,98 @@ i.fa-brands.fa-instagram {
     margin-bottom: 50px;
   }
 }
+
+/* contact page design */
+form.Contacts {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+.Contact-upBox {width: 90%;}
+
+.contact-name span {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 19px;
+  color: #8c8c8c;
+  pointer-events: none;
+}
+
+.contact-name input {
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.contact-name textarea {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  outline: none;
+  padding: 17px 17px;
+}
+
+.contact-name {
+  position: relative;
+}
+
+.contact-name:last-child span {
+  margin-top: 25px;
+}
+.Contact-design {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.Contact-downBox {
+  width: 45%;
+  height: 48%;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-infoTop div i {
+}
+
+.Contact-downBox div i {
+  color: red;
+  margin-right: 20px;
+  font-size: 33px;
+}
+
+.contact-infoDown {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+
+.contact-infoTop div {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1024px) {
   .nav-menu {

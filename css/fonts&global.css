@@ -7,6 +7,7 @@
   --greenColor :green;
   --hover-color : lime;
   --red-color:#CB0253;
+  --background-color: rgb(43, 37, 73);
 
 
 }
@@ -29,7 +30,7 @@ img:hover{
   transform: scale(1.051);
 }
 section{
-  padding: 90px 100px;
+  padding: 90px 100px ;
  column-gap: white ;
 }
 a {
